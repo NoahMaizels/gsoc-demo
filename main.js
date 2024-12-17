@@ -100,6 +100,7 @@ async function startListener(resourceId) {
   const gsocEntry = findMinedResult(GSOC_ID, STORAGE_DEPTH, OWN_OVERLAY);
   console.log(`Listening for messages on GSOC Address: ${gsocEntry.gsocAddress}`);
 
+  // Handle message prompts
   informationSignal.subscribe(
     {
       onMessage: payload => {
