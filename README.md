@@ -24,6 +24,8 @@ npm install
 npm start
 ```
 
-To start communicating with another node, run the script again somewhere else with the config updated for the other node.  
+To start communicating with another node, run the script again from a second node with the config updated for the other node.  
+
+Ensure the BATCH_ID is a valid batch id for each respective node, and reverse the values for OWN_OVERLAY and REMOTE_OVERLAY. The other values can be left unchanged.
 
 While both scripts are running for two different full nodes, a communication channel will be opened between the nodes.
